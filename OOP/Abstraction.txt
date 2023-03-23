@@ -1,0 +1,4 @@
+- Tính trừu tượng là tính chất trong đó chỉ tiết lộ những thành phần thiết yếu với người dùng và ẩn giấu đi những thông tin không cần thiết.
+- Tính trừu tượng thể hiện qua abstract class và interface.
+- Tính trừu tượng thường chỉ nêu lên nhiệm vụ nhưng không nói cụ thể cách thức triển khai.
+- Sử dụng tính trừu tượng giúp giảm sự phức tạp và ẩn giấu các triển khai quan trong khỏi thế giới bên ngoài.

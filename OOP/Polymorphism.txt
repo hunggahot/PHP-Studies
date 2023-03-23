@@ -1,0 +1,5 @@
+- Tính đa hình là một đối tượng có nhiều vai trò, hình dạng tùy thuộc các ngữ cảnh khác nhau.
+- Biểu hiện: nạp chồng và ghi đè phương thức.
+- Nạp chồng: thể hiện tính đa hình tại thời điểm biên dịch chương trình (compile time polymorphism).
+- Ghi đè: thể hiện tính đa hình tại thời điểm chạy chương trình (runtime polymorphism).
+- Tính đa hình cho phép các đối tượng khác nhau sử dụng chung một giao diện (interface).

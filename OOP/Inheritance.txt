@@ -1,0 +1,5 @@
+- Tính kế thừa là thừa hưởng các đặc trung và hành động từ một lớp khác.
+- Biểu hiện: lớp con kế thừa (extends) lớp cha, lớp A triển khai (implements) interface C.
+- Giúp ta tái sử dụng lại code đã có nhưng vẫn đảm bảo duy trì một hệ thống phân cấp duy nhất.
+- Lớp cha sẽ tổng quát, đơn giản hơn lớp con. Lớp con cụ thể và đa dạng hơn lớp cha.
+- Java, C# chỉ hỗ trợ đơn kế thừa, đa kế thừa phải dùng interface.

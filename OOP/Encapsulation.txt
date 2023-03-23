@@ -1,0 +1,5 @@
+- Tính đóng gói là dữ liệu và các hành động liên quan tới dữ liệu của lớp nào thì gói gọn bên trong lớp đó.
+- Các thuộc tính của lớp để là private.
+- Chỉ có thể truy cập trực tiếp tới thuộc tính private từ bên trong lớp chứa nó.
+- Muốn truy cập tới thuộc tính private của lớp phải thông qua setter/getter.
+- Bảo mật & bảo vệ dữ liệu không bị truy cập trái phép

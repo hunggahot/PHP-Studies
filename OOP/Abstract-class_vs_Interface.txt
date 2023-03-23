@@ -1,0 +1,31 @@
+- Giống nhau:
+    + Đều được sử dụng để đạt được tính trừu tượng trong OOP.
+    + Đều được sử dụng trong kế thừa.
+    + Đều có thể chứa cả phương thức và các trường dữ liệu (variables).
+    + Đều không thể tạo đối tượng cụ thể của chúng với keyword new.
+
+- Khác nhau:
+    + Abstract class:
+        . Keyword abstract: khai báo tường minh.
+        . Các kiểu biến: có thể chứa mọi loại biến: final, non-final, static, non-static.
+        . Hằng số: có thể có hoặc không.
+        . Loại phương thức: hỗ trợ tất cả các loại phương thức: constructor, static, non-static, abstract.
+        . Sự triển khai lẫn nhau: Abstract class có thể cung cấp các triển khai cho interface.
+
+    + Interface: 
+        . Keyword abstract: mặc định.
+        . Các kiểu biến: chỉ có thể chứa các biến static và final.
+        . Hằng số: mặc định các biến trong interface là hằng số.
+        . Loại phương thức: chỉ chứa các phương thức abstract, default, static, private.
+        . Sự triển khai lẫn nhau: interface không thể cung cấp triển khai cho abstract class.
+
+- Khi nào sử dụng abstract class?
+    + Khi bạn có một nhóm các lớp liên quan cần chia sẻ chung một đoạn code hay tính năng nào đó. Bạn đưa chung một đoạn code hay tính năng nào đó. Bạn đưa các thành phần dùng chung vào lớp abstract và các lớp con liên quan sẽ kế thừa lớp cha abstract này.
+    + Khi bạn mong muốn rằng các lớp kế thừa lớp abstract có chung nhiều trường, phương thức hoặc muốn dùng chung cả access modifier khác chứ không chỉ là access modifier public.
+    + Bạn muốn khai báo các trường non-static, non-final. Nhờ đó bạn có thể định nghĩa các phương thức có thể truy cập và sửa đổi trạng thái của từng đối tượng.
+
+- Khi nào sử dụng interface
+    + Đạt được tính trừu tượng hoàn toàn. Tất cả các phương thức được nêu ra trong interface chưa có phần thân triển khai chi tiết và cần được triển khai cụ thể các lớp con implements interface đó.
+    + Muốn đạt được tính đa kế thừa.
+    + Muốn cho các lớp không liên quan gì đến nhau cũng có thể sử dụng chức năng interface.
+    + Muốn chỉ định các hành vi cần thực hiện nhưng không quan tâm các hành vi đó được thực hiện bởi ai, thực hiện như thế nào.
