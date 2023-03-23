@@ -1,0 +1,3 @@
+- Là một biến toàn cục được lưu trữ trên máy chủ. Mỗi Session được gán một id duy nhất được sử dụng để truy xuất các giá trị được lưu trữ. Nếu trinh duyệt máy người dùng không hỗ trợ Cookie thì id Session duy nhất được hiện thị trong url. Session có khả năng lưu trữ dự liệu tương đối lớn so với cookie.
+
+- Các giá trị Session sẽ bị xóa khi đóng trình duyệt.

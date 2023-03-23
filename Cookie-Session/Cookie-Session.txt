@@ -1,0 +1,19 @@
+- Giống nhau: đều được sử dụng để lưu trữ thông tin.
+
+- Khác nhau:
+    + Cookie: 
+        . Chỉ được lưu trữ trên máy phía Client.
+        . Các tệp phía Client chứa thông tin người dùng.
+        . Kết thúc tùy thuộc vào thời gian người dùng đặt cho nó.
+        . Không cần phải khởi động Cookie vì nó đã được lưu trữ ở trên máy.
+        . Kích thước tối đa là 4KB.
+        . Một Cookie không phụ thuộc vào Session.
+        . Không có hàm tên unsetCookie().
+    + Session:
+        . Được lưu trữ trên cả Client và Server.
+        . Các tệp phía Server chứa thông tin người dùng.
+        . Kết thúc khi người dùng đóng trình duyệt.
+        . Trước khi sử dụng $_SESSION, phải viết Session_start();.
+        . Có thể lưu trữ bao nhiêu tùy thích. Giới hạn duy nhất có thể đạt được là bộ nhớ tối đa mà tập lệnh có thể tiêu thụ cùng một lúc là 128MB theo mặc định.
+        . Một Session phụ thuộc vào Cookie.
+        . Session_destroy(); được sử dụng để hủy tất cả dữ liệu đã đăng ký.
