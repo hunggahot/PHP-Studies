@@ -1,0 +1,31 @@
+- Phương thức GET rất dễ nhận thấy đó là trên URL sẽ kèm theo dữ liệu mà chúng ta muốn gửi.
+
+- Client gửi lên:
+    + Phương thức GET là phương thức gửi dữ liệu đi qua đường dần URL nằm trên thanh địa chỉ của Browser. Server sẽ được nhận đường dẫn đó và phân tích trả về kết quả cho người dùng. Server sẽ phân tích tất cả những thông tin đằng sau dấu hỏi (?). Chính là phần dữ liệu mà Client gửi lên.
+
+- Server nhận dữ liệu:
+    + Tất cả các dữ liệu mà Client gửi lên bằng phương thức GET. Đều được lưu lại trong biến toàn cục mà PHP tự tạo ra đó là biến $_GET. Biến này là kiểu mảng kết hợp lưu trữ danh sách dữ liệu từ client gửi lên theo quy luật key => value
+
+    + Ví dụ: URL lamhungw.vn?id=12&title=method_get dữ liệu sẽ được lưu trong biến $_GET dưới dạng:
+
+    $_GET = array(
+        'id' => '12',
+        'title' => 'method_get'
+    );
+
+    Vì thế để lấy dữ liệu thì ta chỉ cần làm như sau:
+
+    // Lấy ID 
+    $id = $_GET['id'];
+    echo $id; // kết quả sẽ là 12
+
+    // Lấy title
+    $title = $_GET['title'];
+    echo $title; // kết quả là method_get
+
+    + Lưu lý quan trọng:
+    Trước khi lấy một dữ liệu nào đó phải kiểm tra tồn không rồi mới lấy. Vì nếu không kiểm tra đồng thời với người dùng không truyền dữ liệu qua mà mình lại nhận thì sẽ báo lỗi ngay. Để kiểm tra hãy dùng hàm isset($tenbien) trong PHP.
+
+    if (isset($_GET['id'])){
+        $id = $_GET['id'];
+    }<br><br>
